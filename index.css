@@ -22,3 +22,12 @@ button{
     color: white;
     box-shadow: 8px 8px 8px rgba(0,128,0,0.8);
 }
+
+.white{
+    box-shadow: 8px 8px 8px rgba(66,239,245,0.8);
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 100;
+}
