@@ -32,6 +32,9 @@ function verde(){
     document.getElementById("demo").style.padding = "30px";
     document.getElementById("demo").style.margin = "10px"
     document.getElementById("body").style.backgroundColor = "yellowgreen";
+    document.getElementById("demo1").innerHTML = "";
+    document.getElementById("demo2").innerHTML = "Com a cor verde";
+
 }
 
 function branco(){
@@ -47,4 +50,6 @@ function branco(){
     document.getElementById("demo").style.fontWeight = "700";
     document.getElementById("demo").style.padding = "30px";
     document.getElementById("demo").style.margin = "10px";
+    document.getElementById("demo1").innerHTML = "Fazendo um teste!";
+    document.getElementById("demo1").style.color = "white";
 }
