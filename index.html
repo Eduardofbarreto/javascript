@@ -12,25 +12,20 @@
 <div class="form">
     <form id="meuFormulario">
         <div class="caixa">
-            <label for="nome">Digite o nome do paciente:</label><br>
-            <input type="text" id="nome" name="nome" required>
+            <label for="num1">Digite o primeiro número:</label><br>
+            <input type="number" id="num1" name="num1">
         </div>
         <br>
         <div class="caixa">
-            <label for="data_de_nascimento">Digite a data de nascimento do paciente:</label><br>
-            <input type="date" id="data_de_nascimento" name="data_de_nascimento" required>
+            <label for="num2">Digite o segundo número:</label><br>
+            <input type="number" id="num2" name="num2">
         </div>
         <br>
-        <div class="caixa">
-            <label for="cpf">Digite o CPF do paciente:</label><br>
-            <input type="text" id="cpf" name="cpf" required>
-        </div>
-        <br>
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Resolver</button>
     </form>
 
-    <div id="mensagem"></div>
-    <div id="mensagem1"></div>
+    <br><br>
+    <div id="resultado"></div>
 </div>
 
 <script src="script.js"></script>

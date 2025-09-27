@@ -2,6 +2,11 @@
     background-color: lightgray;
 }
 
+.form{
+    border:3px solid black; 
+    padding: 20px;
+}
+
 button{
     background-color: rgb(5, 81, 87);
     color:white;

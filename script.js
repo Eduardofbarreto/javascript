@@ -1,23 +1,20 @@
 const form = document.getElementById('meuFormulario');
-const inputNome = document.getElementById('nome');
-const inputDate = document.getElementById('data_de_nascimento');
-const inputCpf = document.getElementById('cpf');
-const divMensagem = document.getElementById('mensagem');
-const divMensagem1 = document.getElementById('mensagem1');
+const inputNum1 = document.getElementById('num1');
+const inputNum2 = document.getElementById('num2');
+
+const divMensagem = document.getElementById('resultado');
+
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
 
-    const nomeDigitado = inputNome.value;
+    const num1Digitado = inputNum1.value;
+    const num2Digitado = inputNum2.value;
+    const soma = parseInt(num1Digitado) + parseInt(num2Digitado);
 
-    const dataDigitada = inputDate.value;
+    const resultado = `${num1Digitado} + ${num2Digitado} = ${soma}`;
 
-    const cpfDigitado = inputCpf.value;
-
-    const mensagemFinal = `Olá, ${nomeDigitado}! Você nasceu dia ${dataDigitada}!`;
-    const mensagemFinal1 = `Seu cpf..`
-
-    divMensagem.textContent = mensagemFinal;
+    divMensagem.textContent = resultado;
 
     divMensagem.style.display = 'block';
 
