@@ -9,16 +9,35 @@
 </head>
 <body id="body">
     
+<div class="form">
+    <form id="meuFormulario">
+        <div class="caixa">
+            <label for="num1">Digite o primeiro número:</label><br>
+            <input type="number" id="num1" name="num1">
+        </div>
+        <br>
+        <div class="caixa">
+            <label for="num2">Digite o segundo número:</label><br>
+            <input type="number" id="num2" name="num2">
+        </div>
+        <br>
+        <div class="opcoes">
+            <select name="options" id="options">Opções
+                <option value="nada"></option>
+                <option value="soma">+</option>
+                <option value="subt">-</option>
+            </select>
+            <br>
+        </div>
+        <br>
+        <button type="submit">Resolver</button>
+    </form>
 
-    <p id="demo"></p>
+    <br><br>
+    <div id="resultado"></div>
+</div>
 
-    <p id="demo1">teste</p>
-
-    
-
-
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 
 </body>
 </html>
