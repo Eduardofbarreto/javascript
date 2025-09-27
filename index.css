@@ -1,33 +1,12 @@
+.body{
+    background-color: lightgray;
+}
+
 button{
-    width: 100px;
-    height: 50px;
-}
-
-.black{
-    background-color: black;
-    color: white;
-    box-shadow: 8px 8px 8px rgba(0,0,0,0.8);
-    border: 2px solid white;
-}
-
-.blue{
-    background-color: blue;
-    color: white;
-    box-shadow: 8px 8px 8px rgba(0, 0, 255, 0.8);
-    border: 2px solid white;
-}
-
-.green{
-    background-color: green;
-    color: white;
-    box-shadow: 8px 8px 8px rgba(0,128,0,0.8);
-}
-
-.white{
-    box-shadow: 8px 8px 8px rgba(66,239,245,0.8);
-}
-
-h2{
-    font-size: 40px;
-    font-weight: 100;
+    background-color: rgb(5, 81, 87);
+    color:white;
+    font-weight: 700;
+    border:2px solid rgb(0, 0, 0);
+    width: 150px;
+    height: 40px;
 }

@@ -1,10 +1,25 @@
-function greet(name, age){
-    return "Hello " + name + "! You are " + age + " years old.";
-}
-document.getElementById("demo").innerHTML = greet("Eduardo", 38);
+const form = document.getElementById('meuFormulario');
+const inputNome = document.getElementById('nome');
+const inputDate = document.getElementById('data_de_nascimento');
+const inputCpf = document.getElementById('cpf');
+const divMensagem = document.getElementById('mensagem');
+const divMensagem1 = document.getElementById('mensagem1');
 
-function soma(a, b){
-    return a + b;
-}
+form.addEventListener('submit', function(event){
+    event.preventDefault();
 
-document.getElementById("demo1").innerHTML = soma(6, 6);
+    const nomeDigitado = inputNome.value;
+
+    const dataDigitada = inputDate.value;
+
+    const cpfDigitado = inputCpf.value;
+
+    const mensagemFinal = `Olá, ${nomeDigitado}! Você nasceu dia ${dataDigitada}!`;
+    const mensagemFinal1 = `Seu cpf..`
+
+    divMensagem.textContent = mensagemFinal;
+
+    divMensagem.style.display = 'block';
+
+    inputNome.value = '';
+});
