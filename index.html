@@ -12,29 +12,20 @@
 <div class="form">
     <form id="meuFormulario">
         <div class="caixa">
-            <label for="num1">Digite o primeiro número:</label><br>
-            <input type="number" id="num1" name="num1">
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" id="nome">
         </div>
         <br>
         <div class="caixa">
-            <label for="num2">Digite o segundo número:</label><br>
-            <input type="number" id="num2" name="num2">
-        </div>
-        <br>
-        <div class="opcoes">
-            <select name="options" id="options">Opções
-                <option value="nada"></option>
-                <option value="soma">+</option>
-                <option value="subt">-</option>
-            </select>
-            <br>
+            <label for="idade">Digite a sua idade:</label>
+            <input type="text" id="idade">
         </div>
         <br>
         <button type="submit">Resolver</button>
     </form>
 
     <br><br>
-    <div id="resultado"></div>
+    <div id="mensagem"></div>
 </div>
 
 <script src="script.js"></script>
