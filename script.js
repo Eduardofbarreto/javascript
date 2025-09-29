@@ -1,2 +1,5 @@
-document.getElementById('demo').innerHTML = 'Olá mundo!';
-document.getElementById('demo1').innerHTML = "Meu nome é Eduardo F. Barreto!";
+const tagsParaAlterar = document.getElementsByClassName('texto');
+
+for(let i = 0; i < tagsParaAlterar.length; i++){
+    tagsParaAlterar[i].innerHTML = 'Conteúdo alterado pelo JS!';
+}
