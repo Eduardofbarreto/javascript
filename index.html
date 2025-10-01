@@ -9,11 +9,38 @@
 </head>
 <body>
 
-    <p class="texto"></p>
-    <p class="texto"></p>
-    <p>teste</p>
-    <p>testando</p>
-    <p class="texto"></p>
+    <div>
+        <form id="meuFormulario" onsubmit="return validarFormulario()">
+            <div class="caixa">
+                <label for="nome">Digite o nome do cliente:</label>
+                <input type="text" id="nome">
+            </div>
+            <br>
+            <div class="caixa">
+                <label for="vegetariano">É vegetariano:</label>
+                <select id="vegetariano">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+            <br>
+            <div class="caixa">
+                <label for="dieta">Está de dieta:</label>
+                <select id="dieta">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+            <br>
+            <div class="caixa">
+                <label for="pagamento">Qual tipo de pagamento:</label>
+                <select id="pagamento">
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="cartao">Cartão</option>
+                </select>
+            </div>
+        </form>
+    </div>
 
     <script src="script.js"></script>
 </body>
